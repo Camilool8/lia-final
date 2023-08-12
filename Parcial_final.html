@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PARCIAL FINAL</title>
+    <link rel="stylesheet" type="text/css" href="Parcial_final.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="contenedor">
+        <nav id="navegacion">
+            <img id="logo" src="./logo.jpg" alt="logo">
+            <ul>
+                <li><a href="#contenido-principal">HOME</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#">COLLECTION</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <main id="contenido-principal">
+            <div id="banner-coleccion">
+                <div id="texto-coleccion">See collection</div>
+            </div>
+
+            <div id="cuadros-esteticos">
+                <div class="cuadro-estetico"></div>
+                <div class="cuadro-estetico"></div>
+                <div class="cuadro-estetico"></div>
+                <div class="cuadro-estetico"></div>
+            </div>
+
+            <h2 id="subtitulo">International sendings 24 hours</h2>
+        </main>
+
+        <section id="about-us">
+            <div id="about-image">
+                <img src="./aboutus.jpg" alt="About KB STORES">
+            </div>
+            <div id="about-content">
+                <h1>About us</h1>
+                <h2>Vision</h2>
+                <p>Aquí tu texto de visión...</p>
+
+                <h2>Misión</h2>
+                <p>Aquí tu texto de misión...</p>
+
+                <h2>Valores</h2>
+                <p>Aquí tu texto de valores...</p>
+            </div>
+        </section>
+
+        <section id="collection">
+            <h1>COLLECTION</h1>
+
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="./collection1.jpg" alt="Producto 1">
+                    <p>COLLAR LOLA</p>
+                    <p>RD$ 455.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="./collection5.jpg" alt="Producto 2">
+                    <p>COLLAR EMILY</p>
+                    <p>RD$ 525.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="./collection3.jpg" alt="Producto 3">
+                    <p>COLLAR KAIA</p>
+                    <p>RD$ 465.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="./collection4.jpg" alt="Producto 4">
+                    <p>PULSERA EVA</p>
+                    <p>RD$ 500.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="./collection2.jpg" alt="Producto 5">
+                    <p>PULSERA LUNA</p>
+                    <p>RD$ 465.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="./collection6.jpg" alt="Producto 6">
+                    <p>PULSERA JENNY</p>
+                    <p>RD$ 465.00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us">
+            <!-- Lado izquierdo: Mapa y GIF publicitario -->
+            <div class="left-panel">
+                <iframe width="600" height="245" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRn38l3AaXYP_Ng_n8PqxK7_WEON0jvYY
+                                &q=27+de+febrero,Santo+Domingo,República+Dominicana">
+                </iframe>
+                <img src="publicidad.gif" alt="Publicidad" width="600" height="105">
+            </div>
+        
+            <!-- Lado derecho: Formulario de contacto -->
+            <div class="right-panel">
+                <h2>CONTACT US</h2>
+                <form action="/" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+
+
+        <footer>
+            &copy; 2023 KB STORES
+        </footer>
+    </div>
+
+</body>
+
+</html>

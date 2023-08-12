@@ -1,0 +1,408 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+#logo {
+  width: 25%;
+  margin-right: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 25px;
+  display: flex;
+  background-color: rgb(252 242 235);
+  overflow: hidden;
+}
+
+li {
+  margin: 0;
+}
+
+li + li {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#contenido-principal {
+  width: 100%;
+  padding: 0;
+  font-size: 0;
+}
+
+#banner-coleccion {
+  display: inline-block;
+  width: 70%;
+  animation: sliderAnimation 20s infinite alternate;
+  transition: background-image 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  vertical-align: top;
+  margin-bottom: 20px;
+  margin-right: 140px;
+  margin-left: 60px;
+}
+
+#texto-coleccion {
+  background-color: white;
+  padding: 10px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+
+#cuadros-esteticos {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+}
+
+.cuadro-estetico {
+  background-color: rgb(252 242 235);
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.cuadro-estetico:first-child {
+  background-color: rgb(242, 232, 225);
+}
+
+#subtitulo {
+  width: 80%;
+  text-align: center;
+  bottom: 100%;
+  font-size: 1.3rem;
+  background-color: rgb(252 242 235);
+  padding: 10px 0;
+  margin: 30px auto;
+}
+
+#about-us {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los contenedores */
+  padding: 50px 0; /* Espacio arriba y abajo */
+  margin: 0 auto;
+  align-items: stretch; /* Que los contenedores tengan la misma altura */
+}
+
+#about-image {
+  flex: 0 0 30%; /* Tomará el 30% del ancho */
+  margin-right: 2%; /* Pequeño margen a la derecha para "respirar" */
+}
+
+#about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#about-content {
+  flex: 0 0 68%; /* Tomará el 70% menos el 2% dado de margen en #about-image */
+  background-color: rgb(
+    252,
+    242,
+    235
+  ); /* El color de fondo que has estado usando */
+  display: flex;
+  flex-direction: column; /* Organiza los items en una columna */
+  justify-content: center; /* Centra los items verticalmente */
+  align-items: center; /* Centra los items horizontalmente */
+}
+
+#about-content h1 {
+  font-size: 4.5rem; /* Tamaño más grande */
+  margin-top: 0; /* Remover el margen superior */
+  margin-bottom: 40px; /* Aumentar el margen inferior */
+  color: #c1743e; /* Color caramelo */
+  font-weight: 300; /* Peso de la fuente */
+  text-align: center; /* Alineación al centro */
+}
+
+#about-content h2 {
+  color: #a8753e; /* Un marrón que podría combinar */
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+#about-content p {
+  color: #8b7355; /* El mismo marrón */
+  margin-bottom: 20px; /* Espacio entre cada párrafo */
+  font-size: 1.2rem;
+}
+
+#collection {
+  background-color: rgb(
+    252,
+    242,
+    235
+  ); /* El color de fondo que has estado usando */
+  padding: 50px 0; /* Espaciado arriba y abajo */
+  text-align: center; /* Centramos el contenido horizontalmente */
+}
+
+#collection h1 {
+  font-size: 2.5rem; /* Haciendo el título más grande */
+  margin-bottom: 40px; /* Espaciado debajo del título */
+  color: #c1743e; /* Usando el color caramelo que mencionaste anteriormente */
+}
+
+.product-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Esto permite que las tarjetas se ajusten si no hay suficiente espacio */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin: 20px;
+}
+
+.product-card {
+  flex-basis: calc(
+    33.333% - 20px
+  ); /* Esto hace que cada tarjeta ocupe aproximadamente un tercio del ancho total (menos el espacio) */
+  background-color: #fff; /* Un fondo blanco para cada tarjeta de producto */
+  overflow: hidden; /* Oculta contenido fuera del borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Una sutil sombra */
+  transition: transform 0.3s ease; /* Una transición suave para el hover */
+  height: 400px; /* Altura de la tarjeta */
+}
+
+.product-card img {
+  width: 100%; /* Asegurándonos de que la imagen se ajuste al tamaño de la tarjeta */
+  height: 70%; /* Altura de la imagen */
+  display: block; /* Elimina cualquier espacio extra debajo de la imagen */
+}
+
+.product-card:hover {
+  transform: translateY(
+    -10px
+  ); /* Un ligero efecto de "elevación" al pasar el mouse */
+}
+
+#contact-us {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los dos paneles */
+    padding: 50px 0; /* Espacio arriba y abajo */
+}
+
+.left-panel{
+  flex: 0 0 30%; /* Tomará el 30% del ancho */
+}
+
+.left-panel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-panel{
+  flex: 0 0 45%; /* Tomará el 70% menos el 2% dado de margen en #about-image */
+  background-color: rgb(252, 242, 235); /* El color de fondo que has estado usando */
+  display: flex;
+  flex-direction: column; /* Organiza los items en una columna */
+  justify-content: center; /* Centra los items verticalmente */
+  align-items: center; /* Centra los items horizontalmente */
+}
+
+
+
+.right-panel {
+    background-color: rgb(252, 242, 235); /* Color de fondo que indicaste */
+    padding: 20px; /* Espacio interno al panel */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los elementos del formulario */
+}
+
+.right-panel h2 {
+    color: #a8753e;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.right-panel label {
+    color: #a8753e;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.right-panel input, .right-panel textarea, .right-panel button {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #a8753e;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #a8753e;
+    transition: background-color 0.3s ease;
+}
+
+.right-panel textarea {
+    resize: vertical; /* Permitir el ajuste vertical del textarea */
+    min-height: 100px; /* Altura mínima inicial para el textarea */
+}
+
+.right-panel button {
+    cursor: pointer;
+    background-color: #a8753e;
+    color: #fff;
+    margin-top: 20px;
+    width: 110px;
+    margin: 0 auto;
+}
+
+.right-panel button:hover {
+    background-color: #8b6432; /* Un poco más oscuro al pasar el mouse */
+}
+
+
+footer {
+  background-color: rgb(252, 242, 235); /* color que tenías para el navbar */
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Media Query para Tablets */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    #contenedor {
+        padding: 0 10px; /* Ajuste del padding */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Disminución del tamaño de la fuente */
+    }
+
+    nav {
+        flex-direction: column; /* Alinear verticalmente para evitar desbordamiento */
+        align-items: center;
+
+    }
+
+    #logo {
+        width: 50%; /* Uso completo del ancho para el logo */
+        margin-right: 0;
+        margin-bottom: 10px; /* Añade margen debajo para separarlo del menú */
+    }
+
+    ul {
+        flex-wrap: wrap; /* Permitir el ajuste si no hay suficiente espacio */
+        justify-content: center; /* Centra los elementos de la lista */
+    }
+
+    li + li {
+        margin-left: 10px; /* Reducir el margen entre los items de la lista */
+    }
+
+    #banner-coleccion {
+        width: 100%; /* Uso completo del ancho */
+        margin-right: 0; /* Eliminar margen adicional */
+        margin-left: 0;
+    }
+
+    #cuadros-esteticos {
+
+      display:none;
+    }
+
+    #about-image, #about-content {
+        margin-right: 0; /* Eliminar margen */
+    }
+
+    .product-card {
+        flex-basis: calc(50% - 10px); /* Ahora solo 2 productos por fila */
+    }
+
+    
+    .left-panel, .right-panel {
+        width: 50%; /* Uso completo del ancho */
+        margin-bottom: 20px; /* Margen entre los paneles */
+    }
+
+    .right-panel input, .right-panel textarea, .right-panel button {
+        width: 95%; /* Ligeramente menor para considerar el padding */
+    }
+}
+
+/* ---------- Animaciones ---------- */
+
+@keyframes sliderAnimation {
+  0%,
+  14% {
+    background-image: url("./slider1.jpg");
+  }
+  15%,
+  28% {
+    background-image: url("./slider2.jpg");
+  }
+  29%,
+  42% {
+    background-image: url("./slider3.jpg");
+  }
+  43%,
+  56% {
+    background-image: url("./slider4.jpg");
+  }
+  57%,
+  70% {
+    background-image: url("./slider5.jpg");
+  }
+  71%,
+  84% {
+    background-image: url("./slider6.jpg");
+  }
+  85%,
+  100% {
+    background-image: url("./slider7.jpg");
+  }
+}
