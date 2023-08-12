@@ -174,6 +174,8 @@ a:hover {
   color: #8b7355; /* El mismo marrón */
   margin-bottom: 20px; /* Espacio entre cada párrafo */
   font-size: 1.2rem;
+  text-align: center;
+  padding: 0 60px; /* Espacio interno a los lados */
 }
 
 #collection {
@@ -363,7 +365,7 @@ footer {
         flex-basis: calc(50% - 10px); /* Ahora solo 2 productos por fila */
     }
 
-    
+
     .left-panel, .right-panel {
         width: 50%; /* Uso completo del ancho */
         margin-bottom: 20px; /* Margen entre los paneles */
