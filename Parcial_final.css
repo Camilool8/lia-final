@@ -283,6 +283,27 @@ a:hover {
     transition: background-color 0.3s ease;
 }
 
+/* boton <a> */
+
+.right-panel a {
+    text-decoration: none;
+    color: #a8753e;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    border: 1px solid #a8753e;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    width: 10%;
+    Text-align: center;
+}
+
+.right-panel a:hover {
+    color: #fff;
+    background-color: #a8753e;
+}
+
 .right-panel textarea {
     resize: vertical; /* Permitir el ajuste vertical del textarea */
     min-height: 100px; /* Altura mínima inicial para el textarea */
